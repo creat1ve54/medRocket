@@ -1,0 +1,48 @@
+$FFRoboto: "Roboto", "Arial";
+
+//breakpoints
+$laptop: 1439px;
+$table: 1023px;
+$mobile: 767px;
+$mediumMobile: 576px;
+$smallMobile: 374px;
+
+//color
+
+$Two: #ffaf37;
+$Three: #1c1c1c;
+$Four: #ffffff;
+$Five: #f5f5f5;
+$Six: #117dc1;
+$Seven: #d0d0d0;
+$Hover: #edf9ff;
+
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin table {
+  @media screen and (max-width: $table) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin mediumMobile {
+  @media screen and (max-width: $mediumMobile) {
+    @content;
+  }
+}
+
+@mixin smallMobile {
+  @media screen and (max-width: $smallMobile) {
+    @content;
+  }
+}
